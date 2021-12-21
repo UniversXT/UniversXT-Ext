@@ -31,7 +31,7 @@ if (document.getElementById("unqiueidentify9823r") !== null) {
 
 	function showsaveprompt() {
 		saveChangesPrompt = true
-		chrome.storage.sync.set({
+		chrome.storage.local.set({
 			test: 'test2'
 		})
 		let classes = $('.saveprompt.main').attr('class')
