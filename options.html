@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UniversXT</title>
+	<link href="icons/UniversXT_Logo_128.png" rel="shortcut icon">
+	<link href="options.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="imageinput" id="imageinput">
+		<div class="imageinput-content">
+			<p>Test...</p>
+		</div>
+	</div>
+	<div id="unqiueidentify9823r" class="center">
+		<div class="main">
+			<div class="tab">
+				<img id="ulogo" class="navbarlogo" src="icons/UniversXT_Logo_64.png">
+				<label class="extname">UniversXT</label>
+				<div class="links">
+					<button id="buttonA" class="tablinks google">Sites</button>
+					<button id="buttonB" class="tablinks sapphire">Settings</button>
+					<button id="buttonC" class="tablinks image">Image</button>
+				</div>
+			</div>
+			<div class="tabcontent sites" id="siteselect">
+				<p>Select which site you would like to customize.</p>
+				<button id="sbutton1" class="sbutton classroom">Google Classroom</button><br>
+				<button id="sbutton2" class="sbutton docs">Google Docs</button><br>
+				<button id="sbutton3" class="sbutton slides">Google Slides</button><br>
+				<button id="sbutton4" class="sbutton sheets">Google Sheets</button><br>
+				<button id="sbutton5" class="sbutton sapphire">Sapphire</button><br>
+			</div>
+			<div class="tabcontent google classroom" id="gclassroom">
+				<label class="enableall">Enable Site </label><label class="switch"><input type="checkbox" class="option"><span class="slider round"></span></label><br>
+				<br>
+				<br>
+				<label>Disable Help Button <label class="switch"><input type="checkbox" class="option"><span class="slider round"></span></label></label><br>
+				<br>
+				<label>Disable question mark button in bottom left <label class="switch"><input type="checkbox" class="option"><span class="slider round"></span></label></label>
+			</div>
+			<div class="tabcontent google docs" id="gdocs">
+				<label class="enableall">Enable Site </label><label class="switch"><input type="checkbox" class="option"><span class="slider round"></span></label><br>
+				<br>
+				<br>
+			</div>
+			<div class="tabcontent google slides" id="gslides">
+				<label class="enableall">Enable Site </label><label class="switch"><input type="checkbox"><span class="slider round"></span></label><br>
+				<br>
+				<br>
+			</div>
+			<div class="tabcontent google sheets" id="gsheets">
+				<label class="enableall">Enable Site </label><label class="switch"><input type="checkbox"><span class="slider round"></span></label><br>
+				<br>
+				<br>
+			</div>
+			<div class="tabcontent sapphire" id="sapphire">
+				<label class="enableall">Enable Site </label><label class="switch"><input type="checkbox"><span class="slider round"></span></label><br>
+				<br>
+				<br>
+				<label>Background Image</label><br>
+				<input class="url-input" id="imgurl" name="customurl" type="url" value="" placeholder="Full image URL."><br>
+				<br>
+				<div id="image-result">
+					<p></p>
+				</div>
+				<br>
+				<label>Disable Help Button <label class="switch"><input type="checkbox"><span class="slider round"></span></label></label><br>
+				<br>
+				<label>Hide grades until hover <label class="switch"><input type="checkbox"><span class="slider round"></span></label></label><br>
+			</div>
+			<div class="tabcontent settings" id="settings">
+				
+			</div>
+			<div class="tabcontent image" id="custom">
+				<p>Please enter the full image url below and click save.</p><input class="url-input" id="imgurl" name="customurl" type="url" value=""><br>
+				<br>
+				<div id="image-result">
+					<p></p>
+				</div>
+			</div>
+			<div class="saveprompt main hidesaveprompt" id="saveprompt">
+				<p class="saveprompt label">You have unsaved changes!</p>
+				<button class="saveprompt save" id="saveprompt-save">Save Changes</button>
+				<button class="saveprompt reset" id="saveprompt-reset">Reset</button>
+			</div>
+			<p>
+				<label>Enable on <input checked id="docs-enabled" type="checkbox"> Docs</label>
+				<label><input checked id="slides-enabled" type="checkbox"> Slides</label>
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</p>
+		</div><button class="save" id="save">Save</button>
+		<div id="status">&nbsp;</div><br>
+		<div class="small">
+			<!--Made with ❤️ and a bit of javascript, by <a>Gavin Thomas</a>.-->
+			<button id="test1">Hide</button><br>
+			<button id="test2">Show</button><br>
+			<button id="test3">Prompt</button>
+		</div>
+		<script src="jquery.js" type="text/javascript">
+		</script>
+		<script src="options.js" type="text/javascript">
+		</script>
+	</div>
+</body>
+</html>

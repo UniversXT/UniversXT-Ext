@@ -1,0 +1,356 @@
+/* This is only run on the options page */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+  overflow-x: hidden;
+}
+body {
+  background-image: linear-gradient(rgb(4, 4, 122), rgb(27, 11, 168));
+}
+.small {
+  font-size: .7em;
+  font-weight: 450;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-style: italic;
+}
+.small a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-style: italic;
+}
+.small a:hover {
+  text-decoration: underline;
+}
+textarea {
+  width: 90%;
+  height: 3em;
+  margin: 10px;
+}
+.body-div {
+  height: 100%;
+  width: 100%;
+}
+.center {
+  position: relative;
+  top: 0%;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+.text {
+  height: 1.5em;
+  text-align: left;
+  border: 0;
+  font-size: 1.5em;
+  width: 50%;
+}
+
+.booster {
+  font-size: 1.4em;
+}
+textarea {
+  background: #fff;
+  color: #525865;
+  border: 1px solid #d1d1d1;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.45;
+  outline: none;
+  -webkit-transition: .18s ease-out;
+  -moz-transition: .18s ease-out;
+  -o-transition: .18s ease-out;
+  transition: .18s ease-out;
+}
+textarea:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+textarea:focus {
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+.tab {
+  font-family: inherit;
+  overflow: hidden;
+  background-color: #1b2022 !important;
+  height: 42px;
+  width: 100%;
+  margin-bottom: 10px
+}
+.tab button {
+  font-family: inherit;
+  font-weight: 400;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5em 0.6em;
+  transition: 0.07s;
+  font-size: 0.8em;
+  height: 42px;
+  color: #fff !important;
+}
+.tab button:hover {
+  background-color: #4E4E4E;
+}
+.tab button.active {
+  border-bottom: 3px solid !important;
+  border-color: #fff !important;
+}
+.tabcontent {
+  color: #fff;
+  font-family: inherit;
+  display: none;
+  background-color: #1b2022;
+  border: 0.5rem solid #1b2022;
+  border-radius: 0.5rem;
+  min-height: 13em;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+.main {
+  font-family: inherit;
+  /*width: 60%;
+  padding-left: 20%;*/
+}
+/*@media only screen and (max-width: 900px) {
+  .main {
+    width: 90%;
+    padding-left: 5%;
+  }
+}*/
+.save {
+  margin-top: 1em;
+  font-size: 0.6em;
+}
+p {
+  padding: 5px;
+  margin: 0px;
+}
+.url-input {
+  font-family: 'Share Tech Mono', monospace;
+  width: 94%;
+  font-size: 0.7em;
+  color: black;
+}
+.success {
+  color: green;
+}
+.error, .timeout {
+  color: darkred;
+}
+.dimension {
+  color: black;
+  font-size: 0.65em;
+  text-decoration: italic;
+}
+.imgpreview {
+  height: 70px;
+  width: auto;
+  padding-top: 7px;
+}
+.sbutton {
+  font-family: 'Readex Pro';
+  font-weight: 400;
+  color: #fff;
+  background-color: inherit;
+  outline: none;
+  cursor: pointer;
+  padding: 0.3em 0.6em;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 0.9em;
+  background-color: #1b2022;
+  border: 0.25rem solid #1b2022;
+  border-radius: 0.5rem;
+}
+.sbutton:hover {
+  background-color: rgb(78, 78, 78);
+  border: 0.25rem solid rgb(78, 78, 78);
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.navbarlogo {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: 38px !important;
+  width: 38px !important;
+  margin-bottom: 100px;
+}
+
+.extname {
+  color:#fff;
+  font-weight: 500;
+  position: absolute;
+  left: 45px;
+  top: 11px;
+}
+
+.links {
+  position: relative;
+  left: 160px;
+  height: 42px !important;
+}
+
+.tabcontent p {
+  font-weight: 300;
+}
+
+
+.saveprompt.main {
+  background: #222527;
+  border: 0.5rem solid #222527;
+  border-radius: 0.5rem;
+  width: 300px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  transition: all .45s ease-in-out;
+  overflow: hidden;
+  color: #fff;
+  font-size: 1.05rem;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.hidesaveprompt{
+  right: -320px !important;
+}
+
+.saveprompt.save {
+  background: #3ba55d;
+  border: 0.5rem solid;
+  border-color: #3ba55d;
+  border-radius: 0.2rem;
+  font-family: 'Josefin Sans';
+  color: #fff !important;
+  font-size: .7rem !important;
+  transition: .2s ease;
+  transition-property: border, background-color;
+}
+
+.saveprompt.save:hover {
+  background: #387f47;
+  border-color: #387f47;
+  cursor: pointer;
+}
+
+.saveprompt.reset {
+  background: #222527;
+  border: 0.5rem solid #222527;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: .7rem !important;
+  font-family: 'Josefin Sans';
+}
+
+.saveprompt.reset:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.saveprompt {
+  user-select: none;
+}
+
+.imageinputoff {
+  display: none;
+}
+
+.imageinputon {
+  display: block;
+}
+
+.imageinput {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 42px);
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.imageinput-content {
+  margin: 10% auto;
+  background-color: #1b2022;
+  border: 0.5rem solid #1b2022;
+  border-radius: 0.5rem;
+  width: 75%;
+}
+
+.enableall {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: Readex Pro;
+}
