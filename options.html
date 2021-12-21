@@ -11,20 +11,34 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="imageinput" id="imageinput">
-		<div class="imageinput-content">
-			<p>Test...</p>
-		</div>
+	<div class="ctrlpanel" id="ctrlpanel">
+		<div class="ctrlpanelhead" id="ctrlpanelhead">CtrlPanel</div>
+		<button id="test1">HideSavePrompt</button><br>
+		<button id="test2">ShowSavePrompt</button><br>
+		<button id="test3">ShowImgPicker</button>
+		<button id="test4">HideImgPicker</button>
+		<button id="test5">ToggleSavePrompt</button>
 	</div>
 	<div id="unqiueidentify9823r" class="center">
 		<div class="main">
+			<div class="imageinput" id="imageinput">
+				<div class="imageinput-content">
+					<p class="title">Image Picker</p>
+					<p>You are currently editing: Google Docs Background Image</p><br>
+					<input class="url-input" id="imgurl" name="customurl" type="url" value="" placeholder="Full image URL."><br>
+					<br>
+					<div id="image-result">
+						<p></p>
+					</div>
+				</div>
+			</div>
 			<div class="tab">
-				<img id="ulogo" class="navbarlogo" src="icons/UniversXT_Logo_64.png">
+				<img id="ulogo" class="navbarlogo" src="icons/UniversXT_Logo_64.png" draggable="false">
 				<label class="extname">UniversXT</label>
 				<div class="links">
-					<button id="buttonA" class="tablinks google">Sites</button>
-					<button id="buttonB" class="tablinks sapphire">Settings</button>
-					<button id="buttonC" class="tablinks image">Image</button>
+					<button id="buttonA" class="tablinks google" disabled="false">Sites</button>
+					<button id="buttonB" class="tablinks sapphire" disabled="false">Settings</button>
+					<button id="buttonC" class="tablinks image" disabled="false">Image</button>
 				</div>
 			</div>
 			<div class="tabcontent sites" id="siteselect">
@@ -74,7 +88,7 @@
 				<label>Hide grades until hover <label class="switch"><input type="checkbox"><span class="slider round"></span></label></label><br>
 			</div>
 			<div class="tabcontent settings" id="settings">
-				
+				<label>Experimental Features <label class="switch"><input type="checkbox"><span class="slider round"></span></label></label><br>
 			</div>
 			<div class="tabcontent image" id="custom">
 				<p>Please enter the full image url below and click save.</p><input class="url-input" id="imgurl" name="customurl" type="url" value=""><br>
@@ -100,13 +114,12 @@
 		<div id="status">&nbsp;</div><br>
 		<div class="small">
 			<!--Made with ❤️ and a bit of javascript, by <a>Gavin Thomas</a>.-->
-			<button id="test1">Hide</button><br>
-			<button id="test2">Show</button><br>
-			<button id="test3">Prompt</button>
 		</div>
 		<script src="jquery.js" type="text/javascript">
 		</script>
 		<script src="options.js" type="text/javascript">
+		</script>
+		<script src="tempctrlpanel.js" type="text/javascript">
 		</script>
 	</div>
 </body>

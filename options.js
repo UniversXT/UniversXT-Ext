@@ -20,7 +20,7 @@ if (document.getElementById("unqiueidentify9823r") !== null) {
 		processImage(this);
 	});
 
-	$('#test3').on('click', function() {
+	$('#test5').on('click', function() {
 		if (saveChangesPrompt == false) {
 			saveChangesPrompt = true
 		} else if (saveChangesPrompt == true) {
@@ -31,9 +31,6 @@ if (document.getElementById("unqiueidentify9823r") !== null) {
 
 	function showsaveprompt() {
 		saveChangesPrompt = true
-		chrome.storage.local.set({
-			test: 'test2'
-		})
 		let classes = $('.saveprompt.main').attr('class')
 		if (classes.includes('hidesaveprompt')) {
 			$('.saveprompt.main').removeClass('hidesaveprompt')
@@ -48,13 +45,29 @@ if (document.getElementById("unqiueidentify9823r") !== null) {
 		}
 	}
 
+	function showImgPicker() {
+		$(".imageinput").css("display", "block");
+		$(".tablinks").prop('disabled', "false");
+		$(".tablinks").addClass("nopointer")
+	}
+
+	function hideImgPicker() {
+		$(".imageinput").css("display", "none");
+		$(".tablinks").prop('disabled', "true");
+		$(".tablinks").removeClass("nopointer")
+	}
+
 	/*function checkChanged() {
 		if 
 	}*/
 
-	document.getElementById('test1').addEventListener('click', hidesaveprompt);
+	$('#test1').on('click', hidesaveprompt);
 
-	document.getElementById('test2').addEventListener('click', showsaveprompt);
+	$('#test2').on('click', showsaveprompt);
+
+	$('#test3').on('click', showImgPicker);
+
+	$('#test4').on('click', hideImgPicker);
 
 	//$('.option').on('click', checkChanged)
 	
